@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'futura';
+  src: url('../fonts/futura/medium.woff2') format('woff2'),
+    url('../fonts/futura/medium.woff') format('woff');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'futura';
+  src: url('../fonts/futura/bold.woff2') format('woff2'),
+    url('../fonts/futura/bold.woff') format('woff');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'futura';
+  src: url('../fonts/futura/normal.woff2') format('woff2'),
+    url('../fonts/futura/normal.woff') format('woff');
+  font-weight: 400;
+}
+.heading-clippath {
+  clip-path: polygon(12% 0%, 100% 0%, 85% 100%, 0% 100%);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  height: 100%;
+}
+/* .home-page-hidden {
+  width: 100vw;
+  overflow: hidden;
+  height: 100vh;
+} */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Removes arrows from input[type="number"] */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none; /* stylelint-disable-line property-no-vendor-prefix */
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: none; /* stylelint-disable-line property-no-vendor-prefix */
+}
+
+a,
+button {
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+/* FORM THINGS */
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+input[type='radio'] {
+  -webkit-appearance: none; /* stylelint-disable-line property-no-vendor-prefix */
+  border: none;
+  outline: none;
+  margin: 0;
+}
+
+/* markdown */
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(2.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.moveInRightAnimation {
+  animation: moveInRight 1s ease-out;
+}
+
+.moveInLeftAnimation {
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+.moveInButtonAnimation {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}

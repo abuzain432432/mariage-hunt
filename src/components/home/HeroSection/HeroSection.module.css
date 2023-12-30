@@ -1,0 +1,15 @@
+.heroSectionContainer {
+  /* background-image: url(../../../../public/assets/landing-desktop-bg.jpg); */
+  /* background-size: cover; */
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      to right top,
+      rgba(0, 0, 0, 0.39),
+      rgba(0, 0, 0, 0.37),
+      rgba(0, 0, 0, 0.192)
+    ),
+    url(../../../assets/landing-desktop-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}

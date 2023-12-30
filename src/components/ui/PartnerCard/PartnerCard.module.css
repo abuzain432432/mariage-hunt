@@ -1,0 +1,16 @@
+.card {
+  box-shadow: 0 0 0 6px hsla(0, 0%, 70%, 0.207);
+}
+
+.img {
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 79%);
+}
+.figcaption {
+  width: 100%;
+  padding: 25px;
+  position: relative;
+}
+
+.messageBtn {
+  border: 1px solid rgba(0, 128, 0, 0.63);
+}
